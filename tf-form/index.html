@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サイトのタイトル</title>
+    <meta name="description" content="サイトの概要分">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <main>
+      <form  class="validationForm" action="送信先" method="POST" enctype="multipart/form-data" >
+        <div class="contact-content">
+          <div class="contact-content-item">
+            <h3 class="contact-content-title">出張買取<br>お申し込み・お問い合わせ</h3>
+          </div>
+          <div class="contact-content-item">
+            <div class="contact-content-heading">
+              <p class="contact-content-heading-text">お名前(カタカナ)
+                <span class="contact-content-label contact-content-label-required">必須</span>
+              </p>
+            </div>
+            <div class="contact-content-detail">
+              <input class="contact-input name required maxlength" placeholder="お名前(カタカナ)" type="text" name="data[name]">
+            </div>
+          </div>
+          <div class="contact-content-item">
+            <div class="contact-content-heading">
+              <p class="contact-content-heading-text">郵便番号
+                <span class="contact-content-label contact-content-label-required">必須</span>
+              </p>
+            </div>
+            <div class="contact-content-detail">
+              <input class="contact-input address" placeholder="郵便番号" type="text" name="data[name]">
+            </div>
+          </div>
+          <div class="contact-content-item">
+            <div class="contact-content-heading">
+              <p class="contact-content-heading-text">メールアドレス
+                <span class="contact-content-label contact-content-label-required">必須</span>
+              </p>
+            </div>
+            <div class="contact-content-detail">
+              <input class="contact-input required email" placeholder="メールアドレス" type="email" name="data[email]">
+            </div>
+          </div>
+          <div class="contact-content-item">
+            <div class="contact-content-heading">
+              <p class="contact-content-heading-text">電話番号
+                <span class="contact-content-label contact-content-label-required">必須</span>
+              </p>
+            </div>
+            <div class="contact-content-detail">
+              <input class="contact-input tel" placeholder="電話番号" type="text" name="data[name]">
+            </div>
+          </div>
+          <div class="fcontact-content-item">
+            <p class="form-item-title">出張買い取りのご希望日
+              <span class="form-required">必須</span>
+            </p>
+            <select class="form-item-date">
+              <option value="" disabled selected style="display:none;">第1希望日</option>
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+              <option>D</option>
+            </select>
+            <select class="form-item-date">
+              <option value="" disabled selected style="display:none;">第2希望日</option>
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+              <option>D</option>
+            </select>
+            <select class="form-item-date">
+              <option value="" disabled selected style="display:none;">第3希望日</option>
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+              <option>D</option>
+            </select>
+          </div>
+          <div class="contact-content-item">
+            <div class="contact-content-heading">
+              <p class="contact-content-heading-text">ご依頼の品目内容
+                <span class="contact-content-label contact-content-label-required">必須</span>
+              </p>
+            </div>
+            <div class="contact-content-detail">
+              <textarea class="contact-textarea required maxlength" name="data[comment]" rows="6"></textarea>
+            </div>
+          </div>
+          <div class="contanct-content-item">
+            <p class="contanct-content-text">個人情報保護方針</p>
+            <p class="contanct-content-lead">株式会社ピックアップジャパンは・・・</p>
+          </div>
+          <div class="contact-footer">
+            <p class="contact-footer-text">
+              <label class="contact-privacy">
+                <input class="contact-privacy-input" type="checkbox"  value="プライバシーポリシーの同意" name="agree">
+                <span class="contact-privacy-part"></span>
+              </label>
+              <a href="#" class="contact-privacy-link" target="_blank" >個人情報保護方針に同意する</a>
+            </p>
+            <div class="contact-footer-submit">
+              <button class="contact-submit-button submit button" type="submit" id="submitButton">ご入力内容の確認</button>
+            </div>
+          </div>
+        </div>
+        <div id="easyModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1>Great job 🎉</h1>
+              <span class="modalClose">×</span>
+            </div>
+            <div class="modal-body">
+              <button>お申し込みを送信する</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <script src="script.js"></script>
+    </main>
+</head>
+<body>
+</body>
+</html>
